@@ -12,7 +12,7 @@
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/ColorGame.json", {onProgress: UnityProgress});
       console.log("hello")
         setTimeout(function() {
-        unityInstance.SetFullscreen(1)
+       
         }, 2500);
       
     </script>
@@ -22,7 +22,7 @@
       <div id="unityContainer" style="width: 300px; height: 600px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
-        <div class="fullscreen" ></div>
+        <div class="fullscreen" onclick= " unityInstance.SetFullscreen(1)" ></div>
         <div class="title">Water Sort - Color Sorting</div>
       </div>
     </div>
