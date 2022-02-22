@@ -10,6 +10,7 @@
     <script src="Build/UnityLoader.js"></script>
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/ColorGame.json", {onProgress: UnityProgress});
+      unityInstance.SetFullscreen(1)
     </script>
   </head>
   <body>
@@ -17,7 +18,7 @@
       <div id="unityContainer" style="width: 300px; height: 600px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="fullscreen" onclick=""></div>
         <div class="title">Water Sort - Color Sorting</div>
       </div>
     </div>
