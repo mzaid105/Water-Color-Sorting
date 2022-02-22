@@ -7,12 +7,12 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js" onclick="unityInstance.SetFullscreen(1)"></script>
+    <script src="Build/UnityLoader.js" ></script>
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/ColorGame.json", {onProgress: UnityProgress});
       console.log("hello")
         setTimeout(function() {
-          
+        unityInstance.SetFullscreen(1)
         }, 2500);
       
     </script>
