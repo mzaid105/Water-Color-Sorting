@@ -10,6 +10,7 @@
     <script src="Build/UnityLoader.js"></script>
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/ColorGame.json", {onProgress: UnityProgress});
+      console.log("hello")
         setTimeout(function() {
           unityInstance.SetFullscreen(1)
         }, 2500);
